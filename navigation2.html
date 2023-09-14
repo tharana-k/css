@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+a:hover{
+ color: yellow!important;
+
+}
+.navbar{
+    background-color: forestgreen;
+}
+.menus a{
+    color: #fff;
+    position: relative;
+}
+.submenu{
+    display: none;
+    list-style: none;
+}
+a:hover .submenu{
+    display: block;
+    position: absolute;
+    left: 0;
+    background: forestgreen;
+    padding-left: 0px;
+    padding: 20px ;
+}
+.submenu li{
+    color: #fff;
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+  <div class="navbar">
+
+<div class="menus">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products
+        <ul class="submenu">
+            <li>Engineering</li>
+            <li>Telecom</li>
+            <li>Energy</li>
+            <li>Finance</li>
+            <li>consultancy</li>
+        </ul>
+    </a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+  </div>
+</body>
+</html>
